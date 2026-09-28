@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+<html><head><title>Saved Documents</title><link rel="stylesheet" href="/static/style.css"></head>
+<body><div class="container">
+<h1>Saved Documents</h1>
+{% if rows %}<table><tr><th>ID</th><th>Type</th><th>Name</th><th>Created</th></tr>
+{% for r in rows %}<tr><td>{{r[0]}}</td><td>{{r[1]}}</td><td>{{r[2]}}</td><td>{{r[3]}}</td></tr>{% endfor %}
+</table>{% else %}<p>No documents saved yet.</p>{% endif %}
+<a href="/">Back</a>
+</div></body></html>

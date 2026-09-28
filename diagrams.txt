@@ -1,0 +1,26 @@
+LEGAL EASE DIAGRAM CONTENT
+
+SYSTEM ARCHITECTURE
+[User] -> [HTML/CSS Interface] -> [Flask Backend] -> [Document Generator] -> [SQLite]
+
+DFD LEVEL 0
+[User] -> (LegalEase System) -> [Generated Document]
+                         |
+                         v
+                     [Database]
+
+USE CASE
+User -> Select Document Type
+User -> Enter Details
+User -> Generate Document
+User -> View Saved Documents
+
+ER DIAGRAM
+DOCUMENT
+----------------
+id (PK)
+doc_type
+name
+details
+content
+created_at

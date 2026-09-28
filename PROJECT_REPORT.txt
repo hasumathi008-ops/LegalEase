@@ -1,0 +1,113 @@
+LEGAL EASE: AI-POWERED LEGAL DOCUMENT GENERATOR
+PROJECT REPORT
+
+1. ABSTRACT
+LegalEase is a web-based application designed to simplify the creation of common legal document templates. The system collects basic information from a user and generates a structured document. It uses Python Flask for the web application and SQLite for data storage.
+
+2. INTRODUCTION
+Preparing legal documents can be difficult for people unfamiliar with legal terminology and document structure. LegalEase provides a simple interface where users select a document type and enter relevant information.
+
+3. PROBLEM STATEMENT
+Manual legal document preparation can be time-consuming and confusing. Users may not know the required structure or terminology.
+
+4. OBJECTIVES
+• Provide a simple interface for generating document drafts.
+• Reduce drafting time.
+• Store generated documents.
+• Demonstrate Python, Flask and SQLite.
+• Provide an educational AI-assisted legal document concept.
+
+5. EXISTING SYSTEM
+Traditional preparation involves manually searching for templates, editing them and checking required sections.
+
+6. PROPOSED SYSTEM
+LegalEase allows users to select a document type, enter details, generate a structured draft and store the record.
+
+7. SCOPE
+Future versions can support more document types, multilingual generation, PDF/DOCX export, user accounts and AI language-model integration.
+
+8. MODULES
+1. Document Type Selection
+2. User Input
+3. Document Generation
+4. Database Storage
+5. Document History
+
+9. SYSTEM REQUIREMENTS
+Hardware: 4 GB RAM or above, basic dual-core processor.
+Software: Windows/Linux, Python 3.x, Flask, SQLite and a web browser.
+
+10. TECHNOLOGIES USED
+Frontend: HTML, CSS
+Backend: Python Flask
+Database: SQLite
+
+11. SYSTEM ARCHITECTURE
+User → Web Interface → Flask Application → Document Generator → SQLite Database → Generated Document
+
+12. DATABASE DESIGN
+Table: documents
+id – Primary key
+doc_type – Document type
+name – User name
+details – User details
+content – Generated document
+created_at – Date and time
+
+13. ALGORITHM
+Step 1: Start.
+Step 2: Display the LegalEase home page.
+Step 3: Select a document type.
+Step 4: Enter name and details.
+Step 5: Generate the document.
+Step 6: Store the document in SQLite.
+Step 7: Display the generated document.
+Step 8: Show saved documents when requested.
+Step 9: Stop.
+
+14. DATA FLOW DIAGRAM – LEVEL 0
+User → LegalEase System → Generated Legal Document
+                  ↓
+               Database
+
+15. USE CASES
+Actor: User
+Use cases: Select document type, enter details, generate document and view saved documents.
+
+16. TESTING
+Test 1: Open application – Home page displayed.
+Test 2: Empty name – Browser validation.
+Test 3: Generate document – Structured document displayed.
+Test 4: Saved documents – Stored records displayed.
+
+17. ADVANTAGES
+• Easy to use.
+• Saves drafting time.
+• Simple interface.
+• Stores document history.
+• Can be expanded with AI services.
+
+18. LIMITATIONS
+• Current prototype uses predefined templates.
+• It does not provide legal advice.
+• Professional review is required for real legal use.
+• Advanced security is not included.
+
+19. FUTURE ENHANCEMENTS
+• Secure AI language-model integration.
+• PDF/DOCX export.
+• Multilingual support.
+• User authentication.
+• Digital signatures.
+• Stronger privacy and security.
+• More document templates.
+
+20. CONCLUSION
+LegalEase demonstrates a practical approach to generating structured legal document drafts through a web application. It combines Flask, HTML, CSS and SQLite in a simple architecture.
+
+21. BIBLIOGRAPHY
+1. Python Documentation
+2. Flask Documentation
+3. SQLite Documentation
+4. Software Engineering textbooks
+5. Database Management textbooks
