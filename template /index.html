@@ -1,1 +1,19 @@
-
+<!DOCTYPE html>
+<html><head><title>LegalEase</title><link rel="stylesheet" href="/static/style.css"></head>
+<body><div class="container">
+<h1>LegalEase</h1><p>AI-Powered Legal Document Generator</p>
+<form method="post">
+<label>Document Type</label>
+<select name="doc_type">
+<option>Rental Agreement</option>
+<option>Affidavit</option>
+<option>Leave and License Agreement</option>
+<option>Employment Agreement</option>
+<option>Notice Letter</option>
+</select>
+<label>Name</label><input name="name" required>
+<label>Details</label><textarea name="details" rows="8" required></textarea>
+<button type="submit">Generate Document</button>
+</form>
+<a href="/documents">View Saved Documents</a>
+</div></body></html>
